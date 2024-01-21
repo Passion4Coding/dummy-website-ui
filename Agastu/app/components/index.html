@@ -25,11 +25,11 @@
     <!-- Vendor CSS Files -->
     <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <!-- <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
-    <!-- <link href="../../assets/vendor/aos/aos.css" rel="stylesheet"> -->
-    <!-- <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
-    <!-- <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+    <!-- <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
     <!-- Template Main CSS File -->
     <link href="../../assets/css/main.css" rel="stylesheet">
@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,11 +72,55 @@
             </form>
           </div>
         </div>
-      </nav>
+      </nav> -->
+      <header id="header" class="header fixed-top d-flex align-items-center sticked">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Yummy<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero" class="">Home</a></li>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header>
     <!-- <div>hi in index</div>
 
     <iframe src="./dummy.html"></iframe> -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 5.65rem; padding: 0;">
         <section id="hero" class="hero d-flex align-items-center section-bg">
             <div class="container">
               <div class="row justify-content-between gy-5">
@@ -312,7 +356,6 @@
         </div>
       </section>
 
-
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
   
@@ -332,7 +375,7 @@
                 <i class="icon bi bi-map flex-shrink-0"></i>
                 <div>
                   <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Bengaluru</p>
                 </div>
               </div>
             </div><!-- End Info Item -->
@@ -342,7 +385,7 @@
                 <i class="icon bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>contact@example.com</p>
+                  <p>iankitgupta9@gmail.com</p>
                 </div>
               </div>
             </div><!-- End Info Item -->
@@ -352,7 +395,7 @@
                 <i class="icon bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>+91 9129829901</p>
                 </div>
               </div>
             </div><!-- End Info Item -->
@@ -404,12 +447,8 @@
               <i class="bi bi-geo-alt icon"></i>
               <div>
                 <h4>Address</h4>
-                <p>
-                  A108 Adam Street <br>
-                  New York, NY 535022 - US<br>
-                </p>
-              </div>
-    
+                <p> Bengaluru </p>
+              </div>    
             </div>
     
             <div class="col-lg-3 col-md-6 footer-links d-flex">
@@ -417,8 +456,8 @@
               <div>
                 <h4>Reservations</h4>
                 <p>
-                  <strong>Phone:</strong> +1 5589 55488 55<br>
-                  <strong>Email:</strong> info@example.com<br>
+                  <strong>Phone:</strong> +91 9129829901<br>
+                  <strong>Email:</strong> iankitgupta9.com<br>
                 </p>
               </div>
             </div>
@@ -440,7 +479,7 @@
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/ankit-gupta-7aa596149/" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
     
@@ -456,7 +495,7 @@
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-            Designed by <a href="iankitgupta.com">Ankit Gupta</a>
+            Designed by <a href="iankitgupta9.com">Ankit Gupta</a>
           </div>
         </div>
     
